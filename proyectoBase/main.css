@@ -22,7 +22,7 @@ body{
     justify-content: space-around;
 }
 .Contenedor{
-    background-color: #ac3b3b;
+    background-color: #EEEEEE;
     flex:1;
     display: flex;
     flex-direction: row;
@@ -48,24 +48,6 @@ body{
     padding:5px 10px;
     margin: 5px 0;
 }
-#personas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.Persona{
-    display: flex;
-    flex-direction: column;
-    margin:5px;
-    padding:10px;
-    border-radius: 10px;
-    background-color: white;
-}
-.Persona span{
-    margin: 10px 20px;
-}
 .Boton{
     padding: 10px 15px;
     margin:5px;
@@ -73,6 +55,31 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
+
+#personas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.Persona{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 15px;
+    background-color: aquamarine;
+    border-radius: 15px;
+}
+
+.Persona span{
+    font-size: 18px;
+    margin: 5px 10px;
+}
+
+
 .Footer{
     background-color: #CCCCCC;
     height: 100px;
