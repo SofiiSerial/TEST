@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./main.css">
+    <title>Formulario</title>
+    <script type="text/javascript" src="./tp.js">
+    </script>
+</head>
+<body>
+
+    <div class="contenido">
+        <form class="formulario" id="form">
+
+            <h2>Registro de Materias</h2>
+
+            <input id="codigo" class="sofy" type="number" placeholder="ID">
+            <input id="nombre" class="sofy" type="text" placeholder="Nombre">
+            <input id="docente" class="sofy" type="text" placeholder="Docente">
+            <input id="horas" class="sofy" type="text" placeholder="Horas Semanales">
+            
+            <div id="notas" class="notas">
+                    <input class="sofy2" type="number" name="nota" placeholder="Nota">
+            </div>
+
+            <div class="califBoton">
+                    <input type="button" onclick="agregarNota()" class="agregarNotas" value="+">
+                </div>
+
+
+            <div class="acciones">
+                <a class="botones botoncito" onclick="alerta()"><abbr title="Guardar"><img src="img/diskette.png"></abbr></a>            
+                <a class="botones eliminar botoncito" onclick="eliminarTodos()"><abbr title="Borrar Todo"><img src="img/bin.png"></abbr></a>
+            </div>
+            
+        </form>
+
+        <div id="materias"></div>
+    </div>
+
+</body>
+</html>

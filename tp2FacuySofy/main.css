@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Oswald";
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.contenido {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 825px;
+    flex: 1;
+}
+
+.formulario {
+	user-select: none;
+	padding-top: 1rem;
+    background: #C87D6D;
+	border-radius: 10px;
+	width: 450px;
+    height: 700px;
+}
+
+.formulario h2 {
+    margin-top: 25px;
+	font-size: 1.75em;
+	text-align: center;
+    text-transform: uppercase;
+}
+
+
+.sofy {
+    font-size: 1.25rem;
+	display: block;
+	margin: 30px auto;
+	text-align: center;
+	width: 300px;
+	height: 40px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	border: 1px solid #C87D6D;
+	outline: 2px solid #A96455;
+	transition: all .3s;
+}
+
+
+.notas {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center !important;
+	gap: 10px;
+}
+
+.sofy2 {
+	font-size: 1.25rem;
+	display: block;
+	text-align: center;
+	height: 40px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	width: 80px;
+	text-align: center;
+	border: 1px solid #C87D6D;
+	outline: 2px solid #A96455;
+	transition: all .3s;
+}
+
+.sofy:focus, .sofy2:focus {
+	outline: 2px solid #333;
+	border: none;
+}
+
+.valor:last-child {
+    cursor: pointer;
+}
+
+
+.botoncito {
+	background-color: #A96455;
+	color: black;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.botoncito:hover {
+	background-color: #A06052;
+}
+
+#materias {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.materia {
+	width: 62vw;
+	display: flex;
+	flex-direction: row;
+	margin: 5px;
+	background-color: #C87D6D;
+	position: relative;
+	user-select: none;
+
+}
+
+.EliminarMateria {
+	position: absolute;
+	right: 5px;
+	top: -20px;
+	border-radius: 50%;
+	padding: 5px 12px;
+	cursor: pointer;
+	color: red;
+	transition: all 100ms;
+}
+
+.EliminarMateria:hover {
+	animation: giro 300ms;
+	transform: scale(1.2); 
+}
+
+.materia span {
+	padding: 8px;
+}
+
+.materia .face {
+	width: 150px;
+}
+
+.materia .lastSpan {
+
+}
+
+.botoncito img {
+	width: 35px;
+	height: 35px;
+}
+
+.acciones {
+	margin-top: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+
+}
+
+.botones {
+	border-radius: 10px;
+	padding: 1rem;
+	border: none;
+	outline: none;
+	width: 70px;
+	transition: all .3s;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: textfield !important;
+	margin: 0;
+	display: none !important;
+	opacity: 0 !important;
+}
+
+.dato {
+	font-size: 17px;
+	font-weight: 500;
+	color: white;
+}
+
+.equis {
+	font-size: 2.56rem;
+}
+
+.botones:hover {
+	transform: scale(1.1);
+}
+
+
+.agregarNotas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: 30px;
+	height: 40px;
+	background: #A96455;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	border: 1px solid #C87D6D;
+	font-size: 1.75rem;
+	transition: all .3s;
+	outline: 2px solid #A96455;
+}
+
+.agregarNotas:hover {
+	background-color: #A06052;
+}
+
+.calif {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.califBoton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px
+}
