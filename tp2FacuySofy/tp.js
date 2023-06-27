@@ -63,7 +63,7 @@ function alerta() {
 	const codigo = document.getElementById("codigo").value;
 	const nombre = document.getElementById("nombre").value;
 	const docente = document.getElementById("docente").value;
-	const horas = document.getElementById("horas").value;
+	const hsCatedras = document.getElementById("horas").value;
 
 	const notas = [...document.getElementsByName("nota")];
 	const calif = notas.map(nota => parseInt(nota.value)); 
@@ -72,13 +72,11 @@ function alerta() {
 		codigo,
 		nombre,
 		docente,
-		horas,
-		calif
+		hsCatedras
 	}
+	guardar(materia)
 
-	materias.push(materia);
-
-	escribir(materias);
+	//escribir(materias);
 
 }
 
@@ -92,4 +90,30 @@ function agregarNota() {
 		
     	divNotas.innerHTML += notaHTML;  
 
+}
+
+function obtenerMateria(){
+	const url='http://192.168.0.178:3010/api/materias/'
+
+	axios.get(url)
+	.then((resp)=>{
+	//escribir(//resp.data.materias);
+		//resp.data.materias
+	})
+	.catch((error)=>{
+
+	})
+}
+
+function guardar(datos){
+	const url='http://192.168.0.178:3010/api/materias/'
+
+	axios.post(url, datos)
+	.then((resp)=>{
+		obtenerMateria()
+	})
+	.catch((error)=>{
+		alert("ocurrio un error")
+		console.log(error)
+	})
 }
