@@ -7,7 +7,7 @@
 */
 
 
- let materias = [];
+ 
 
 function escribir(materias) {
 
@@ -97,11 +97,15 @@ function obtenerMateria(){
 
 	axios.get(url)
 	.then((resp)=>{
+		console.log(url)
+		
 	//escribir(//resp.data.materias);
 		//resp.data.materias
 	})
-	.catch((error)=>{
 
+	.catch((error)=>{
+		alert("ocurrio un error")
+		console.log(error)
 	})
 }
 
@@ -110,6 +114,7 @@ function guardar(datos){
 
 	axios.post(url, datos)
 	.then((resp)=>{
+		console.log(resp.data)
 		obtenerMateria()
 	})
 	.catch((error)=>{
@@ -117,3 +122,5 @@ function guardar(datos){
 		console.log(error)
 	})
 }
+
+
