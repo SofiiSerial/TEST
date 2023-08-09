@@ -93,11 +93,11 @@ function agregarNota() {
 }
 
 function obtenerMateria(){
-	const url='http://192.168.0.178:3010/api/materias/'
+	const url='http://192.168.0.196:3010/api/materias/'
 
 	axios.get(url)
 	.then((resp)=>{
-		console.log(url)
+		console.log(resp.data)
 		
 	//escribir(//resp.data.materias);
 		//resp.data.materias
@@ -110,7 +110,7 @@ function obtenerMateria(){
 }
 
 function guardar(datos){
-	const url='http://192.168.0.178:3010/api/materias/'
+	const url='http://192.168.0.196:3010/api/materias/'
 
 	axios.post(url, datos)
 	.then((resp)=>{
