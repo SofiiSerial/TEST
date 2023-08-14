@@ -75,9 +75,6 @@ function alerta() {
 	}
 	guardar(materia)
 
-	materias.push(materia);
-	escribir(materias);
-
 }
 
 
@@ -99,7 +96,7 @@ function obtenerMateria(){
 	.then((resp)=>{
 		console.log(resp.data)
 		
-	//escribir(//resp.data.materias);
+	escribir(resp.data.materias);
 		//resp.data.materias
 	})
 
