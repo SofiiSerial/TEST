@@ -58,7 +58,7 @@ function eliminarTodos(){
 }
 
 
-function alerta() {
+function guardarMateria() {
 
 	const codigo = document.getElementById("codigo").value;
 	const nombre = document.getElementById("nombre").value;
@@ -91,5 +91,23 @@ function agregarNota() {
 		` 
 		
     	divNotas.innerHTML += notaHTML;  
+
+}
+
+function login(){
+	let usuario = document.getElementById("usuario").value;
+	let contraseña = document.getElementById("contraseña").value;
+
+
+	if(usuario==""){
+		alert("nombre de usuario no puede estar vacio");
+	}
+	else if(contraseña==""){
+		alert("debes poner una contraseña");
+	}
+	else{
+		console.log(usuario,contraseña);
+
+	}
 
 }
