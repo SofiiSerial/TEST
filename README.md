@@ -1,8 +1,9 @@
 # README # luciana camara sofia serial
-Este es un repositorio de 7mo 2da
+
+Este es un repositorio de 7mo 2da sofia y luciana
 
 ### NOMBRE Y APELLIDO: ###
-LUCIANA CAMARA Y SOFIA SERIAL
+SOFIA SERIAL Y LUCIANA CAMARA
 
 ## MATERIA: ##
 TALLER DE INGENIERIA DE SOFTWARE
