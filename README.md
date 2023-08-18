@@ -1,5 +1,5 @@
 # README # luciana camara sofia serial
-Este es un repositorio de...
+Este es un repositorio de 7mo 2da
 
 ### NOMBRE Y APELLIDO: ###
 LUCIANA CAMARA Y SOFIA SERIAL
